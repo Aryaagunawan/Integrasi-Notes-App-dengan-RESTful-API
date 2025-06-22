@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="icon" href="data:," />
+    <link rel="icon" href="./asset/pencil.png" />
+</head>
+
+<body>
+    <header-bar></header-bar>
+    <main>
+        <note-form></note-form>
+        <div class="notes-container">
+            <div class="tabs" style="display: flex; margin-bottom: 1rem; border-bottom: 1px solid var(--accent);">
+                <button class="tab active" data-tab="active">Active Notes</button>
+                <button class="tab" data-tab="archived">Archived Notes</button>
+            </div>
+            <note-list></note-list>
+        </div>
+    </main>
+    <footer-bar></footer-bar>
+    <error-toast></error-toast>
+
+</body>
+
+</html>
